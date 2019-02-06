@@ -10,11 +10,13 @@
 formulaire ${pers.prenom} ${pers.nom} ${pers.email}
 
 <form method="post" action="person">
-
-<input name="prenom" /><br/>
-<input name="nom" /><br/>
-<input name="emial" /><br/>
-<input type="submit" />
+<label for="name">Nom :</label>
+<input name="prenom" /><br/><br/>
+<label for="prenom">Prenom :</label>
+<input name="nom" /><br/><br/>
+<label for="email">Email :</label>
+<input type="email" name="emial" /><br/><br/>
+<button type="submit"> Evnoyer </button>
 
 </form>
 
