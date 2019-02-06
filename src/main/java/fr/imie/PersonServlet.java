@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/Person")
+@WebServlet("/person")
 public class PersonServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -19,7 +19,7 @@ public class PersonServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		Person pers = new Person(prenom, nom, email);
 		request.setAttribute("pers", pers);
-		request.getRequestDispatcher("Person.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/views/Person.jsp").forward(request, response);
 	}
 }
 	

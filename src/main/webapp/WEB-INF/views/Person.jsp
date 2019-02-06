@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> --%>
 <meta charset="utf-8">
 <title>Formulaire</title>
 </head>
@@ -9,7 +9,7 @@
 
 formulaire ${pers.prenom} ${pers.nom} ${pers.email}
 
-<form method="post" action="Person">
+<form method="post" action="person">
 
 <input name="prenom" /><br/>
 <input name="nom" /><br/>
