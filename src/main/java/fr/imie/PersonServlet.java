@@ -16,8 +16,10 @@ public class PersonServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String prenom = request.getParameter("prenom");
 		String nom = request.getParameter("nom");
-		Person pers = new Person(prenom, nom);
+		String email = request.getParameter("email");
+		Person pers = new Person(prenom, nom, email);
 		request.setAttribute("pers", pers);
 		request.getRequestDispatcher("form.jsp").forward(request, response);
 	}
 }
+	

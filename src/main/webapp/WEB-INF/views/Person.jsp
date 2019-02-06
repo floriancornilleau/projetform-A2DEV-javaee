@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,12 +8,13 @@
 </head>
 <body>
 
-formulaire ${pers.prenom} ${pers.nom}
+formulaire ${pers.prenom} ${pers.nom} ${pers.email}
 
 <form method="post" action="person" >
 
 <input name="prenom" /><br/>
 <input name="nom" /><br/>
+<input name="emial" /><br/>
 <input type="submit" />
 
 </form>
