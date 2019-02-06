@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +8,7 @@
 
 formulaire ${pers.prenom} ${pers.nom} ${pers.email}
 
-<form method="post" action="person" >
+<form method="post" action="Person">
 
 <input name="prenom" /><br/>
 <input name="nom" /><br/>

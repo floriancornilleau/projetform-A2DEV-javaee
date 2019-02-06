@@ -19,7 +19,7 @@ public class PersonServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		Person pers = new Person(prenom, nom, email);
 		request.setAttribute("pers", pers);
-		request.getRequestDispatcher("form.jsp").forward(request, response);
+		request.getRequestDispatcher("Person.jsp").forward(request, response);
 	}
 }
 	
