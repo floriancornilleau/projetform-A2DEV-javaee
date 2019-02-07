@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%-- <jsp:useBean id="taList" scope="request" type="java.util.ArrayList"/>
- --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <meta charset="utf-8">
 <title>Formulaire</title>
@@ -19,23 +17,24 @@ Bonjour ${pers.prenom} ${pers.nom} ${pers.email}
 <input name="nom" /><br/><br/>
 <label for="email">Email :</label>
 <input type="email" name="emial" /><br/><br/>
-<button type="submit"> Evnoyer </button>
+<button type="submit"> Envoyer </button>
 
 </form>
 
-<%-- <table border=1> 
-<tr> 
-   <th>Champ1</th> 
-   <th>Champ2</th> 
-</tr> 
-<c:forEach items="${liste}" var="table">
+<table border ="2" style="background-color: grey; margin: auto;" cellpadding="10" cellspacing="1" width="50%">
 <tr>
-   <td><c:out value="${liste.nom}"/></td>
-   <td><c:out value="${liste.prenom}"/></td>
-   <td><c:out value="${liste.email}"/></td>
-   
-</tr>	
-</table> --%>
+	<th>Nom</th>
+	<th>Prénom</th>
+	<th>Email</th>
+</tr>
+<c:forEach var="pers" items="${persList}">
+<tr>
+ <td><c:out value="${pers.nom}" /></td>
+ <td><c:out value="${pers.prenom}"/></td>
+ <td><c:out value="${pers.email}" /></td>
+</tr>
+</c:forEach>
+</table>
 
 
 </body>

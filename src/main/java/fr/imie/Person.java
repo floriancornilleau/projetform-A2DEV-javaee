@@ -6,6 +6,7 @@ public class Person {
 	private String prenom;
 	private String nom;
 	private String email;
+	
 
 	public Person(String prenom, String nom, String email) {
 		this.prenom = prenom;
