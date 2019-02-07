@@ -14,14 +14,6 @@ public class Person {
 		this.email = email;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getPrenom() {
 		return prenom;
 	}
@@ -36,6 +28,13 @@ public class Person {
 
 	public void setNom(String nom) {
 		this.nom = nom;
+	}
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 }

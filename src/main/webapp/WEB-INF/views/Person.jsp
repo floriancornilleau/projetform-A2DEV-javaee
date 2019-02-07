@@ -8,15 +8,15 @@
 <body>
 <h1>FORMULAIRE</h1><br/>
 
-Bonjour ${pers.prenom} ${pers.nom} ${pers.email}
+Bonjour ${pers.prenom} ${pers.nom}
 
-<form method="post" action="person">
+<form method="post" action="person" style="margin: auto;">
 <label for="name">Nom :</label>
 <input name="prenom" /><br/><br/>
 <label for="prenom">Prenom :</label>
 <input name="nom" /><br/><br/>
 <label for="email">Email :</label>
-<input type="email" name="emial" /><br/><br/>
+<input type="email" name="email" /><br/><br/>
 <button type="submit"> Envoyer </button>
 
 </form>
