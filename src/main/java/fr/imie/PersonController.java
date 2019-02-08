@@ -23,7 +23,7 @@ public class PersonController {
 
 		List<Person> persons = repository.findAll();
 
-		m.addAttribute("person", persons);
+		m.addAttribute("persons", persons);
 		return "person";
 	}
 

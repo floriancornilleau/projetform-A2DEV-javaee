@@ -16,7 +16,6 @@
 			<tr>
 				<td>${person.prenom}</td>
 				<td>${person.nom}</td>
-				<td>${person.email}</td>
 			</tr>
 		</c:forEach>
 	</table>
