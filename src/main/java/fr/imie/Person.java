@@ -12,12 +12,17 @@ public class Person {
 	private String nom;
 	private String email;
 	
+	
+	public Person() {
+		
+	}
 
 	public Person(String prenom, String nom, String email) {
 		this.prenom = prenom;
 		this.nom = nom;
 		this.email = email;
 	}
+	
 
 	public String getPrenom() {
 		return prenom;
