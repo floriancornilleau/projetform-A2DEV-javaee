@@ -7,15 +7,19 @@
 </head>
 <body>
 
-<form method="post" action="person" >
+<form method="post" action="person">
+<div style="text-align: center">
 	<input name="prenom" />
 	<input name="nom" />
+	<input name="email" />
 	<input type="submit" />
-	<table>
+</div>
+	<table style="margin: auto; text-align: center;"cellpadding="10" cellspacing="1" width="30%">
 		<c:forEach var="person" items="${persons}" >
 			<tr>
 				<td>${person.prenom}</td>
 				<td>${person.nom}</td>
+				<td>${person.email}</td>
 			</tr>
 		</c:forEach>
 	</table>
