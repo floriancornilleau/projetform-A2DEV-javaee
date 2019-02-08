@@ -18,9 +18,7 @@ Bonjour ${pers.prenom} ${pers.nom}
 <input name="nom" /><br/><br/>
 <label for="email">Email :</label>
 <input type="email" name="email" /><br/><br/>
-<button type="submit"> Envoyer </button>
-
-</form>
+<button type="submit"> Envoyer </button><br/>
 
 <table border ="1" style="background-color: grey; margin: auto;" cellpadding="10" cellspacing="1" width="50%">
 <tr>
@@ -36,6 +34,9 @@ Bonjour ${pers.prenom} ${pers.nom}
 </tr>
 </c:forEach> 
 </table>
+</form>
+
+
 
 
 </body>
