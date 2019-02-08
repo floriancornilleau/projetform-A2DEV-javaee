@@ -11,6 +11,9 @@
 
 Bonjour ${pers.prenom} ${pers.nom}
 
+<table border ="1" style="background-color: grey; margin: auto;" cellpadding="10" cellspacing="1" width="50%">
+
+<tr><br/>
 <form method="post" action="hello" style="margin: auto;">
 <label for="name">Nom :</label>
 <input name="prenom" /><br/><br/>
@@ -20,8 +23,7 @@ Bonjour ${pers.prenom} ${pers.nom}
 <input type="email" name="email" /><br/><br/>
 <button type="submit"> Envoyer </button><br/>
 
-<table border ="1" style="background-color: grey; margin: auto;" cellpadding="10" cellspacing="1" width="50%">
-<tr>
+
 	<th>Nom</th>
 	<th>Prénom</th>
 	<th>Email</th>
@@ -33,8 +35,8 @@ Bonjour ${pers.prenom} ${pers.nom}
  <td><c:out value="${pers.email}" /></td>
 </tr>
 </c:forEach> 
-</table>
 </form>
+</table>
 
 
 
